@@ -5,11 +5,18 @@ import { Container, Row, Col } from "../components/Grid";
 import SearchForm from "../components/SearchForm";
 
 class Books extends Component {
-state = {
+  state = {
     books: [],
     search: "",
     title: "",
     author: "",
     description: ""
-};
+  };
 }
+
+handleInputChange = event => {
+  const { name, value } = event.target;
+  this.setState({
+    [name]: value
+  });
+};
