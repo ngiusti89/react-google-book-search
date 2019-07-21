@@ -2,7 +2,7 @@ import React from "react";
 // import "./style.css";
 import { Row, Col } from "../Grid";
 
-const SearchResult = props => {
+const SearchResults = props => {
   return props.books.length === 0 ? (
     <div className="card">
       <div className="card-body player">
@@ -20,7 +20,7 @@ const SearchResult = props => {
             return (
               <li className="search-list list-group-item">
                 <Row
-                  className="SearchResult row"
+                  className="SearchResults row"
                   id={book.title + "Card"}
                   key={book._id}
                 >
@@ -64,4 +64,4 @@ const SearchResult = props => {
     </div>
   );
 };
-export default SearchResult;
+export default SearchResults;
