@@ -11,6 +11,14 @@ export function Input(props) {
   );
 }
 
+export function TextArea(props) {
+  return (
+    <div className="form-group">
+      <textarea className="form-control" rows="20" {...props} />
+    </div>
+  );
+}
+
 // Destructuring the type, className, children and onClick props, applying them to the button element
 export function FormBtn({ children, onClick }) {
   return (
