@@ -20,7 +20,7 @@ const SavedResult = props => {
             return (
               <li className="saved-list list-group-item">
                 <Row
-                  className="SearchResult"
+                  className="SearchResults"
                   id={savedbook.title + "Card"}
                   key={savedbook._id}
                 >
